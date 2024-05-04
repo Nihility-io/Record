@@ -60,14 +60,14 @@ const reduce = <K extends string | number | symbol, V, R>(
  * Checks if a give object is a record
  * @param obj Object to test
  */
-export const isRecord = (obj: unknown): obj is Record<string | number | symbol, unknown> =>
+const isRecord = (obj: unknown): obj is Record<string | number | symbol, unknown> =>
 	!!obj && Object.getPrototypeOf(obj) === Object.prototype
 
 /**
  * Flattens a nested record into a flat record, where each key represents the path to the original value
  * @param r Record
  */
-export const flatten = <V>(r: NestedRecord<V>): Record<string, V> => {
+const flatten = <V>(r: NestedRecord<V>): Record<string, V> => {
 	const res: Record<string, V> = {}
 	for (const [key, value] of Object.entries(r)) {
 		if (value && typeof value === "object") {
