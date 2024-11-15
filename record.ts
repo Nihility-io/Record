@@ -101,4 +101,7 @@ const flatten = <V>(r: NestedRecord<V>): Record<string, V> => {
 	return res
 }
 
+/**
+ * Functions for working with records
+ */
 export const Record = { keys, values, map, mapToArray, filter, reduce, isRecord, flatten }
