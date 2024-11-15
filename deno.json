@@ -1,6 +1,6 @@
 {
   "name": "@nihility-io/record",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "exports": "./mod.ts",
   "lock": true,
   "tasks": {
