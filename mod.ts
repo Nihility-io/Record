@@ -1,2 +1,4 @@
-export * from "./record.ts"
-export { Record as default } from "./record.ts"
+import * as Record from "./record.ts"
+export * as Record from "./record.ts"
+export * from "./types.ts"
+export default Record

@@ -1,19 +1,39 @@
 {
 	"name": "@nihility-io/record",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"exports": "./mod.ts",
 	"lock": true,
 	"tasks": {
-		"test": "deno test --coverage=coverage && deno coverage coverage --html && deno coverage coverage --detailed && deno coverage coverage"
+		"test": "deno test --coverage=coverage && deno coverage coverage --detailed"
 	},
 	"imports": {
-		"@std/assert": "jsr:@std/assert@^1.0.12"
+		"@std/assert": "jsr:@std/assert@^1.0.13"
 	},
 	"lint": {
 		"rules": {
-			"tags": [
-				"fresh",
-				"recommended"
+			"tags": ["recommended", "jsr"],
+			"include": [
+				"jsx-button-has-type",
+				"camelcase",
+				"default-param-last",
+				"eqeqeq",
+				"explicit-function-return-type",
+				"explicit-module-boundary-types",
+				"no-console",
+				"no-const-assign",
+				"no-eval",
+				"no-external-import",
+				"no-inferrable-types",
+				"no-self-compare",
+				"no-sparse-arrays",
+				"no-sync-fn-in-async-fn",
+				"no-throw-literal",
+				"no-undef",
+				"no-useless-rename",
+				"single-var-declarator"
+			],
+			"exclude": [
+				"verbatim-module-syntax"
 			]
 		}
 	},
